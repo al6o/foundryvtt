@@ -11,12 +11,6 @@ Foundry VTT modules. Each installs and updates independently via its manifest UR
 
 Install in Foundry: **Add-on Modules → Install Module**, paste a manifest URL.
 
-## Download stats
-
-Per-module, per-version download counts are tracked in **[DOWNLOADS.md](DOWNLOADS.md)**,
-refreshed automatically by [a scheduled workflow](.github/workflows/download-stats.yml).
-The badges above show each module's lifetime total.
-
 ## License
 
 [MIT](LICENSE) © borisov
