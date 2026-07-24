@@ -1,5 +1,4 @@
 {
-  "updatedAt": "2026-07-24T18:23:27.728Z",
   "assets": {
     "albo-simple-scene-notes-v1.5.0/albo-simple-scene-notes.zip": {
       "carried": 0,
@@ -7,7 +6,7 @@
     },
     "albo-image-viewer-v1.0.0/albo-image-viewer.zip": {
       "carried": 0,
-      "last": 11
+      "last": 13
     }
   }
 }
