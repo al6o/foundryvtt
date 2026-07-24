@@ -1,0 +1,48 @@
+name: Download stats
+
+# Keeps DOWNLOADS.md and the Shields badge files in sync with the real
+# download counts of the release packages. Runs daily, on every release
+# event (so a re-upload/clobber reset is captured before counts are lost),
+# and on demand from the Actions tab.
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  release:
+    types: [published, released, edited]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Never run two updates at once — they would race on the commit.
+concurrency:
+  group: download-stats
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate report and badges
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node .github/scripts/download-stats.mjs
+
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain DOWNLOADS.md .stats)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add DOWNLOADS.md .stats
+            git commit -m "chore: update download stats"
+            git push
+          else
+            echo "No changes."
+          fi

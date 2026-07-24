@@ -4,12 +4,18 @@ Foundry VTT modules. Each installs and updates independently via its manifest UR
 
 ## Modules
 
-| Module | Manifest URL |
-| --- | --- |
-| **Albo's Simple Scene Notes** — colored pins with notes on scenes | `https://raw.githubusercontent.com/al6o/foundryvtt/main/modules/albo-simple-scene-notes/module.json` |
-| **Albo's Image Viewer** — shared zoomable image viewer with a real-time drawing board | `https://raw.githubusercontent.com/al6o/foundryvtt/main/modules/albo-image-viewer/module.json` |
+| Module | Downloads | Manifest URL |
+| --- | --- | --- |
+| **Albo's Simple Scene Notes** — colored pins with notes on scenes | ![](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/al6o/foundryvtt/main/.stats/badge-albo-simple-scene-notes.json) | `https://raw.githubusercontent.com/al6o/foundryvtt/main/modules/albo-simple-scene-notes/module.json` |
+| **Albo's Image Viewer** — shared zoomable image viewer with a real-time drawing board | ![](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/al6o/foundryvtt/main/.stats/badge-albo-image-viewer.json) | `https://raw.githubusercontent.com/al6o/foundryvtt/main/modules/albo-image-viewer/module.json` |
 
 Install in Foundry: **Add-on Modules → Install Module**, paste a manifest URL.
+
+## Download stats
+
+Per-module, per-version download counts are tracked in **[DOWNLOADS.md](DOWNLOADS.md)**,
+refreshed automatically by [a scheduled workflow](.github/workflows/download-stats.yml).
+The badges above show each module's lifetime total.
 
 ## License
 
