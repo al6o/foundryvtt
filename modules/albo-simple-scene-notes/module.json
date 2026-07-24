@@ -1,0 +1,40 @@
+{
+  "id": "albo-simple-scene-notes",
+  "title": "Albo's Simple Scene Notes",
+  "description": "Simple colored pins with notes on scenes.",
+  "version": "1.5.0",
+  "authors": [
+    {
+      "name": "Albo",
+      "email": "borisov.norilsk@gmail.com"
+    }
+  ],
+  "url": "https://github.com/al6o/foundryvtt",
+  "manifest": "https://raw.githubusercontent.com/al6o/foundryvtt/main/modules/albo-simple-scene-notes/module.json",
+  "download": "https://github.com/al6o/foundryvtt/releases/download/albo-simple-scene-notes-v1.5.0/albo-simple-scene-notes.zip",
+  "license": "MIT",
+  "bugs": "https://github.com/al6o/foundryvtt/issues",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14"
+  },
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "styles": [
+    "styles/albo-simple-scene-notes.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "socket": true
+}

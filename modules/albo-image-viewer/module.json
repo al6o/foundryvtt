@@ -1,0 +1,41 @@
+{
+  "id": "albo-image-viewer",
+  "title": "Albo's Image Viewer",
+  "description": "Opens chat images in a separate scalable window with a shared drawing board: everyone sees the drawings in real time.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Albo",
+      "email": "borisov.norilsk@gmail.com"
+    }
+  ],
+  "url": "https://github.com/al6o/foundryvtt",
+  "manifest": "https://raw.githubusercontent.com/al6o/foundryvtt/main/modules/albo-image-viewer/module.json",
+  "download": "https://github.com/al6o/foundryvtt/releases/download/albo-image-viewer-v1.0.0/albo-image-viewer.zip",
+  "license": "MIT",
+  "bugs": "https://github.com/al6o/foundryvtt/issues",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "socket": true
+}
