@@ -23,16 +23,16 @@ jobs:
   stats:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           # A release event checks out the tag, which leaves a detached HEAD with
           # no branch to push to. The report always belongs on main, whatever
           # triggered the run.
           ref: main
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: "20"
+          node-version: "24"
 
       - name: Generate report and badges
         env:
