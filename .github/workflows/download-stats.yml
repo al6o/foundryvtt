@@ -24,6 +24,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # A release event checks out the tag, which leaves a detached HEAD with
+          # no branch to push to. The report always belongs on main, whatever
+          # triggered the run.
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
@@ -42,6 +47,9 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add DOWNLOADS.md .stats
             git commit -m "chore: update download stats"
+            # A release run starts moments after the release push, so main can
+            # have moved between checkout and now.
+            git pull --rebase --autostash
             git push
           else
             echo "No changes."
