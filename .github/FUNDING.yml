@@ -1,0 +1,3 @@
+# Renders the repository's "Sponsor" button. GitHub has no native key for
+# Lava.top, so the link goes under `custom` (which accepts up to 4 URLs).
+custom: ["https://app.lava.top/albo"]
