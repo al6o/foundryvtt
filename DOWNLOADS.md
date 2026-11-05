@@ -12,11 +12,12 @@ GitHub counts downloads of release **assets** only (the `<module>.zip` files) �
 | 1.1.0 | 116 | 116 | 2026-07-26 |
 | 1.0.0 | 50 | 50 | 2026-07-24 |
 
-## albo-simple-scene-notes — lifetime total: 191
+## albo-simple-scene-notes — lifetime total: 192
 
 | Version | Live (GitHub) | Total | Asset updated |
 | --- | ---: | ---: | --- |
-| 1.5.1 | 186 | 186 | 2026-09-06 |
+| 1.5.2 | 0 | 0 | 2026-11-05 |
+| 1.5.1 | 187 | 187 | 2026-09-06 |
 | 1.5.0 | 5 | 5 | 2026-07-24 |
 
-**Grand total across all modules: 533**
+**Grand total across all modules: 534**
