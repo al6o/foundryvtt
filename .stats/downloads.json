@@ -2,15 +2,15 @@
   "assets": {
     "albo-simple-scene-notes-v1.5.2/albo-simple-scene-notes.zip": {
       "carried": 0,
-      "last": 0
+      "last": 7
     },
     "albo-simple-scene-notes-v1.5.1/albo-simple-scene-notes.zip": {
       "carried": 0,
-      "last": 187
+      "last": 188
     },
     "albo-image-viewer-v1.2.0/albo-image-viewer.zip": {
       "carried": 0,
-      "last": 176
+      "last": 178
     },
     "albo-image-viewer-v1.1.0/albo-image-viewer.zip": {
       "carried": 0,
@@ -22,7 +22,7 @@
     },
     "albo-image-viewer-v1.0.0/albo-image-viewer.zip": {
       "carried": 0,
-      "last": 50
+      "last": 51
     }
   }
 }
